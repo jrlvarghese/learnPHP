@@ -11,3 +11,10 @@ echo('<br>'.$name.'<br>');
 $users = Array('jeril', 'ajoy', 'jithin');
 echo '<br>'.$users;
 print_r($users);
+
+// Associative arrays 
+$students = Array('jeril'=>28,
+                'ajoy'=>26,
+                'jithin'=>25);
+echo('<br><br>accessing value of a key<br>');
+echo($students['jeril']);
