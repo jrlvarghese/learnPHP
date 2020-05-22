@@ -40,3 +40,18 @@ printString('Hello Jeril Varghese');
 
 printSomething();
 printSomething('This will print this..');
+echo '<br>';
+// Loops and conditionals in php
+for($i=0; $i<10; $i++){
+    if($i%2 == 0){
+        echo $i.' is even<br>';
+    }else{
+        echo $i.' is odd<br>';
+    }
+}
+
+// traversing through an array
+echo '<br><br>Traversing through an array using foreach<br>';
+foreach($users as $user){
+    echo $user.'<br>';
+}
