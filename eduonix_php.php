@@ -18,3 +18,25 @@ $students = Array('jeril'=>28,
                 'jithin'=>25);
 echo('<br><br>accessing value of a key<br>');
 echo($students['jeril']);
+
+// Functions in php
+function printMsg(){
+    echo '<br>Hello world!!';
+}
+
+
+function printString($msg){
+    echo '<br>'.$msg;
+}
+
+//function with default argument
+function printSomething($msg='Print something....'){
+    echo '<br>'.$msg;
+}
+
+printMsg();
+
+printString('Hello Jeril Varghese');
+
+printSomething();
+printSomething('This will print this..');
