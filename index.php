@@ -2,7 +2,7 @@
 $cookie_name = "username";
 $cookie_value = "jeril";
 //set cookie
-//setcookie($cookie_name, $cookie_value, time()+1800);
+setcookie($cookie_name, $cookie_value, time()+1800);
 ?>
 
 <!DOCTYPE html>
