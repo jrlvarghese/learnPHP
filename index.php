@@ -8,6 +8,11 @@
 
 <body>
     <div class="w3-card w3-margin w3-padding">
+        <?php if(isset($_GET['error'])): ?>
+            <div class="w3-panel w3-red">
+                <h3><?php echo $_GET['error'];?></h3>
+            </div>  
+        <?php endif; ?>
         <h2>Register</h2>
         <form class="w3-container" method="POST" action="register.php">
             <label class="w3-label w3-text-blue">First Name</label>

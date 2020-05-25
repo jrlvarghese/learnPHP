@@ -5,6 +5,10 @@
     $lastName = $_POST['lastName'];
     $email = $_POST['email'];
     $gender = $_POST['gender'];
+    // check if fields are empty
+    if($firstName=='' || $lastName=='' || $email=='' || $gender==''){
+        header("Location: index.php?error=Please%20Fill%20All%20Fields.");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +19,7 @@
 </head>
 
 <body>
-    <div class='w3-container w3-margin w3-padding'>
+    <div class="w3-card w3-margin w3-padding">
         <h2>User profile</h2>
         <h3><?php echo $firstName.' '; echo $lastName;?></h3>
         <ul>
